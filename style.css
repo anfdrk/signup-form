@@ -12,22 +12,54 @@
   --yellow: rgb(251, 162, 46);
   --input-border: rgba(255, 255, 255, 0.4);
 }
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color-base);
-  background: linear-gradient(270deg, #050025 30%, rgba(6, 0, 40, 0.9) 74.37%, rgba(6, 0, 41, 0.7) 100%), url(maxim-berg-ZESbrsLBPPk-unsplash.jpg) no-repeat;
-  /* background-size: 100; */
+  background: linear-gradient(270deg, #050025 30%, 
+    rgba(6, 0, 40, 0.9) 74.37%, rgba(6, 0, 41, 0.7) 100%), 
+    url(maxim-berg-ZESbrsLBPPk-unsplash.jpg) no-repeat;
+  margin: 35px 150px 0 110px;
 }
-
+p {
+  margin: 0 0 40px 0;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 35px;
+}
 .container {
   display: flex;
+  justify-content: space-between;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 135px;
+}
+.logo {
+  color: var(--accent-1);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.logo::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  background: var(--accent-2);
+  border-radius: 50px;
+}
+.content-text {
+  max-width: 600px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 45px;
+}
+label {
+  color: var(--accent-3);
+  font-weight: 700;
+  font-size: 0.9rem;
 }
