@@ -7,39 +7,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="content">
-    <a href="#" class="logo">some app</a>
-    <div class="content-text">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex, ratione  repellendus molestias porro minima  esse voluptatum suscipit accusamus  optio dolore perspiciatis quam  temporibus. 
-      </p>
-      <p>
-        Soluta, ducimus quia!
-      </p>
+
+  <div class="container">
+    <div class="content">
+      <a href="#" class="logo">some app</a>
+      <div class="content-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex, ratione  repellendus molestias porro minima  esse voluptatum suscipit accusamus  optio dolore perspiciatis quam  temporibus.
+        </p>
+        <p>
+          Soluta, ducimus quia!
+        </p>
+      </div>
+    </div>
+    <div class="form">
+      <h2>Sign up</h2>
+      <form action="#" method="post">
+        <div><label for="name">NAME</label></div>
+        <input type="text" id="name" name="name">
+    
+        <div><label for="email">EMAIL</label></div>
+        <input type="email" id="email" name="email">
+    
+        <div><label for="phone">PHONE</label></div>
+        <input type="number" id="phone" name="phone">
+    
+        <div><label for="password">PASSWORD</label></div>
+        <input type="password" id="password" name="password" class="error">
+        <div><label for="confirm">CONFIRM PASSWORD</label></div>
+        <input type="password" id="confirm" name="password" class="error">
+    
+        <div><button type="button">Create account</button></div>
+      </form>
+      <a href="#">Already have an account? <span>Login</span></a>
     </div>
   </div>
 
-  <div class="form">
-    <h1>Sign up</h1>
-    <form action="#" method="post">
-      <div><label for="name">NAME</label></div>
-      <input type="text" id="name" name="name">
-      
-      <div><label for="email">EMAIL</label></div>
-      <input type="email" id="email" name="email">
-      
-      <div><label for="phone">PHONE</label></div>
-      <input type="number" id="phone" name="phone">
-      
-      <div><label for="password">PASSWORD</label></div>
-      <input type="password" id="password" name="password">
-
-      <div><label for="confirm">CONFIRM PASSWORD</label></div>
-      <input type="password" id="confirm" name="password">
-      
-      <div><button type="button">Create account</button></div>
-    </form>
-    <a href="#">Already have an account? <span>Login</span></a>
-  </div>
 </body>
+<script src="script.js"></script>
 </html>

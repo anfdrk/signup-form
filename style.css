@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --text-color-base: #fff;
+  --accent-1: rgb(175, 185, 142);
+  --accent-2: rgb(218, 227, 150);
+  --accent-3: rgba(175, 185, 142, 0.7);
+  --red-1: rgb(255, 23, 21);
+  --red-2: rgb(255, 79, 77);
+  --red-3: rgb(255, 122, 121);
+  --green: rgb(0, 245, 147);
+  --yellow: rgb(251, 162, 46);
+  --input-border: rgba(255, 255, 255, 0.4);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color-base);
+  background: linear-gradient(270deg, #050025 30%, rgba(6, 0, 40, 0.9) 74.37%, rgba(6, 0, 41, 0.7) 100%), url(maxim-berg-ZESbrsLBPPk-unsplash.jpg) no-repeat;
+  /* background-size: 100; */
+}
+
+.container {
+  display: flex;
+}
