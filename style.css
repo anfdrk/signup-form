@@ -103,12 +103,22 @@ button {
   color: #050025;
   font-weight: 700;
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin: 10px 0 20px;
+}
+button:hover {
+  background: var(--accent-2);
+  cursor: pointer;
 }
 .login {
-  color: var(--text-color-base);
+  color: var(--input-border-2);
   font-weight: 700;
   font-size: 1.2rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+}
+.login:hover {
+  color: var(--text-color-base);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .login-span {
   color: var(--accent-2);
