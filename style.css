@@ -10,13 +10,18 @@
   --input-border: rgba(255, 255, 255, 0.4);
   --input-border-2: rgba(255, 255, 255, 0.6);
 }
+html {
+  font-size: 16px;
+}
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color-base);
   background: linear-gradient(270deg, #050025 30%, 
     rgba(6, 0, 40, 0.9) 74.37%, rgba(6, 0, 41, 0.7) 100%), 
     url(maxim-berg-ZESbrsLBPPk-unsplash.jpg) no-repeat;
-  margin: 35px 150px 0 110px;
+    /* background-size: cover, ; */
+    background-position: center;
+    margin: 35px 150px 0 110px;
 }
 p {
   margin: 0 0 40px 0;
@@ -37,15 +42,15 @@ h2 {
   gap: 135px;
 }
 .logo {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
   color: var(--accent-1);
   font-size: 2.5rem;
   font-weight: 700;
 }
 .logo::before {
   content: '';
-  position: absolute;
-  left: 40px;
-  top: 40px;
   width: 50px;
   height: 50px;
   background: var(--accent-2);
@@ -88,4 +93,23 @@ input:focus, input:focus:hover {
   outline-style: solid;
   outline-color: var(--accent-2);
   box-shadow: 0 0 0 1px var(--accent-2),inset 0 0 0 2px var(--accent-2);
+}
+button {
+  border: none;
+  width: 210px;
+  height: 44px;
+  background: var(--accent-1);
+  border-radius: 0.5rem;
+  color: #050025;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.login {
+  color: var(--text-color-base);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.login-span {
+  color: var(--accent-2);
 }
